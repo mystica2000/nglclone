@@ -6,18 +6,18 @@
    - share the link on socials. 
    - anyone with that link will have form(text area, submit)
    - people with the link can able to send text message
-   - users can able to view the text messages people sent, and delete/download them as image
+   - users can able to view the text messages people sent, and mark as replied/delete/download them as image
    - users can enable/disable the link
 
 ## Installation and Setup Instruction
 
 ### Server
-- Uses google oauth and cloudinary for storing images.
-
-- google oauth
+Uses
+-  google oauth 
    - get clientID, clientSecret from google developer console by creating a new project
    - clientID looks like ```generatedcode.apps.googleusercontent.com```
 - cloudinary
+   - for storing images (profile picture).
    - get API Environment Variable from the dashboard after creating a account there.
    - looks like ```cloudinary://yourvariable``` on the dashboard
 
