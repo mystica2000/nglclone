@@ -23,6 +23,8 @@ create ```env.json``` inside the server folder and add the env variables to it.
 }
 ```
 
+- go mod download
+
 - Install SQLite
 
 ### Client
