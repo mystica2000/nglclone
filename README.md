@@ -1,7 +1,15 @@
 # nglclone
+   Clone of https://ngl.link/
+   
+   - create account with oauth (for example: username as mystica) 
+   - link will be generated (test.com/mystica)
+   - share the link on socials. 
+   - anyone with that link will have form(text area, submit)
+   - people with the link can able to send text message
+   - users can able to view the text messages people sent, and delete/download them as image
+   - users can enable/disable the link
 
 ## Installation and Setup Instruction
-
 
 ### Server
 - Uses google oauth and cloudinary for storing images.
