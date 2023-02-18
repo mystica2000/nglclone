@@ -1,0 +1,60 @@
+/*
+ CHATGPT TO THE RESCUE FOR TOGGLE!! :P
+*/
+
+/* Style the parent container as an inline-block element with a fixed size */
+.toggle-button {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide the checkbox */
+#toggle-checkbox {
+  opacity: 0;
+}
+
+/* Style the toggle button slider */
+.toggle-button-slider {
+  position: absolute; /* Position the slider element absolutely */
+  cursor: pointer; /* Show a pointer cursor when hovering over the slider */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Gray background color */
+  -webkit-transition: .4s; /* Add a transition effect when changing the slider's state */
+  transition: .4s;
+}
+
+/* Style the toggle button thumb */
+.toggle-button-slider:before {
+  position: absolute; /* Position the thumb element absolutely */
+  content: ""; /* Empty content */
+  height: 26px; /* Set the thumb's height */
+  width: 26px; /* Set the thumb's width */
+  left: 4px; /* Position the thumb 4px from the left */
+  bottom: 4px; /* Position the thumb 4px from the bottom */
+  background-color: white; /* White background color for the thumb */
+  -webkit-transition: .4s; /* Add a transition effect when changing the thumb's state */
+  transition: .4s;
+}
+
+/* Change the slider's background color when the checkbox is checked */
+#toggle-checkbox:checked + .toggle-button-slider {
+  background-color: #2196F3; /* Blue background color */
+}
+
+/* Add a box shadow to the slider when the checkbox is focused */
+#toggle-checkbox:focus + .toggle-button-slider {
+  box-shadow: 0 0 1px #2196F3; /* Add a blue box shadow */
+  border: 1px solid #2196F3;
+}
+
+/* Move the thumb to the right when the checkbox is checked */
+#toggle-checkbox:checked + .toggle-button-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}

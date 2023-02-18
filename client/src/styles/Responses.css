@@ -1,0 +1,105 @@
+.responses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/** <li> response lists **/
+.item {
+  border: 2px solid white;
+  color: black;
+  background-color: white;
+  min-height: 50px;
+  min-width: 190px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  list-style-type: none;
+
+  margin-top: 15px;
+
+  border-radius: 10px;
+  padding: 10px;
+
+  display: grid;
+
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+}
+
+ul {
+  min-height: 50px;
+  min-width: 190px;
+  width: 100%;
+}
+
+.btn-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.btn-row {
+  margin: 0;
+  background-color: aquamarine;
+}
+
+@media screen and (max-width: 800px) {
+  .btn-header{
+    gap: 0.5rem;
+  }
+}
+
+/* responses tex */
+.pbox {
+  margin: 10px;
+padding: 5px;
+border-radius: 5px;
+border-radius: 10px;
+border: 1px solid transparent;
+box-shadow: 0 0 0 2px black;
+}
+
+/* mark as done in responses btn*/
+.markedDone{
+  background-color: lightgray;
+  border-color: lightgray;
+}
+
+
+/* Download div as image */
+
+.item-image {
+  max-width: 500px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  min-height: 320px;
+}
+
+.item-image {
+  position: relative;
+  border:3px solid black;
+  margin:20px;
+}
+
+.item-image:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.19;
+  background-image: url("https://res.cloudinary.com/dtr0c0lk2/image/upload/v1675353460/must/userlmn_5f6dc9cec63a84d4e33dcf4647dc4bc7_btjwjx.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  min-height: 320px;
+    height: max-content;
+}
+
+.image-div {
+  display:grid;
+  background:white;
+  width:500px;
+}
+

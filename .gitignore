@@ -1,0 +1,5 @@
+server/env.json
+server/nglclone.exe
+server/server.exe
+client/dist
+client/node_modules

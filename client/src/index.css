@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  background-color: bisque;
+}
+
+/* on home page */
+.scrollToTopBtn {
+  background-color: rgba(182, 195, 214, 0.2);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  position: fixed;
+  z-index: 3;
+  border: 2px solid black;
+  height: 3em;
+  width: 3em;
+  display: flex;
+
+  cursor: pointer;
+
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+
+.error-container,
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  gap: 1em;
+  text-align: center;
+}
+
+ /* Form.tsx, Name.tsx */
+.name-container {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 404 page */
+.error-container h1 {
+  font-size: 120px;
+  font-weight: bold;
+}
+
+ /* Form.tsx, Name.tsx */
+.name-container h1 {
+  font-size: 36px;
+}
+
+ /* Form.tsx, Name.tsx
+    second container with outline!
+ */
+.name-container-2 {
+  padding: 3rem;
+  background: white;
+  border-radius: 15px;
+
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+  margin: 1em;
+}
+
+/* button styles */
+.btn {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border: 2px solid black;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.btn:hover {
+  border: 2px solid black;
+  text-decoration: none;
+  background-color: rgb(63, 63, 70);
+  color: white;
+}
+
+.btn-blue {
+  background-color: #24a0ed;
+  color: white;
+}
+
+.btn-warning {
+  background-color: #c39aff;
+  ;
+}
+
+.btn-success {
+  background-color: #baff75;
+}
+
+.btn-danger {
+  background-color: #ff8e8e;
+}
+
+.input-text {
+  padding: 10px;
+}
+
+.error-msg {
+  color: red;
+  transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+  /* Form.tsx, Name.tsx */
+  .name-container {
+    flex-direction: column;
+  }
+}
+
+/* show individual container as small with ellipsis when down arrow is visible...*/
+.psmall {
+    max-height: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

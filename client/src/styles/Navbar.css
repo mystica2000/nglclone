@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.nav-home {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.img {
+  transform: rotate(-6deg);
+  margin-left: -15px;
+  margin-top: -10px;
+}
+
+.img::hover {
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,190 @@
+/*contains style for profile,responses component along with home page */
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 20px;
+  gap: 1rem;
+}
+
+.form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  text-align: left;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.profile {
+  background-color: white;
+  align-items: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 1em;
+  border-radius: 6px;
+  position: sticky;
+  top: 10px;
+  min-width: 250px;
+  font-size: calc(.5 * (1.5vh + 1.1vw));
+  /* response font accross the screen size*/
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+}
+
+@media screen and (max-width: 675px) {
+  .profile {
+    display: none;
+  }
+
+  .home-container {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .profile button {
+    font-size: calc(.5 * (1.5vh + 1.1vw));
+  }
+}
+
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.profile-input {
+  margin: 1px;
+}
+
+.form-row {
+  border-top: 1px solid rgba(150, 164, 179, .1);
+  padding: 0.625rem 1.25rem;
+}
+
+
+.profile-pic {
+  height: 200px;
+  max-width: 200px;
+  background-color: #fcfcfc;
+  border: 2px solid #fff;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+  color: #fff;
+
+  transition: background-color .2s ease-in-out;
+  opacity: 1;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+
+.edit-icon {
+  display: none;
+  position: absolute;
+  top: 46%;
+  left: 49%;
+  opacity: 1;
+  z-index: 3;
+  cursor: pointer;
+}
+
+
+.profile-pic:hover {
+  opacity: 0.2;
+}
+
+.profile-pic:hover+.edit-icon {
+  display: block;
+}
+
+
+.space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.fill {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+}
+
+.pic-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.small-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+  opacity: 1;
+  cursor: pointer;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+/* screenshot api doesn't support object fit */
+.small-img-mod{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+  opacity: 1;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.header label,
+.header div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.sub-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
