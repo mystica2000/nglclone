@@ -204,14 +204,14 @@ func CheckPublicID(id string) (string, error) {
 
 	row := Db.QueryRow("Select public_id from users where id = ?", id)
 
-	var public_id string
+	var public_id = ""
 	if err := row.Scan(&public_id); err != nil {
 		if err == sql.ErrNoRows {
 			return "", nil
 		} else {
 			Log.Info("Error ", zap.Error(err))
 		}
-		return "", fmt.Errorf("database Error")
+		return "", nil
 	}
 	return public_id, nil
 }
