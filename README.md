@@ -28,3 +28,5 @@ create ```env.json``` inside the server folder and add the env variables to it.
 ### Client
 - run ```npm install```
 
+
+## Database Schema
