@@ -32,3 +32,5 @@ create ```env.json``` inside the server folder and add the env variables to it.
 
 
 ## Database Schema
+![nglclone](https://user-images.githubusercontent.com/45729256/219892477-75653890-c5e2-4773-aebe-d91cee4b2299.png)
+
